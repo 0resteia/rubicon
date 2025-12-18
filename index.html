@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Private Diary</title>
+  <title>Digital Diary</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
+<!-- PASSWORD SCREEN -->
 <div id="lock" class="center">
-  <h2>🔒 Private Diary</h2>
+  <h2>Private Diary</h2>
   <input type="password" id="password" placeholder="Enter password">
-  <button onclick="unlock()">Enter</button>
+  <button>Enter</button>
 </div>
 
+<!-- DIARY -->
 <div id="diary" hidden>
 
+  <!-- PROFILE -->
   <header class="profile">
-    <img src="images/profile.jpg" class="profile-pic">
+    <img src="images/profile.jpg" class="profile-pic" alt="Profile Picture">
     <div>
       <h1>@my_diary</h1>
       <p class="bio">A quiet place for memories.</p>
     </div>
   </header>
 
+  <!-- POSTS GRID -->
   <section id="grid" class="grid"></section>
+
 </div>
 
-<!-- Modal -->
+<!-- FULLSCREEN MODAL -->
 <div id="modal" class="modal" hidden>
   <span id="close">&times;</span>
-  <img id="modal-img">
+  <img id="modal-img" alt="">
   <div id="modal-caption"></div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
