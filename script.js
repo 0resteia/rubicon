@@ -34,10 +34,11 @@ const modalCaption = document.getElementById("modal-caption");
 const closeBtn = document.getElementById("close");
 
 function openModal(post) {
-  modal.hidden = false;
+  modal.style.display = "flex";
   modalImg.src = post.image;
   modalCaption.innerHTML = `<strong>${post.date}</strong><br>${post.caption}`;
 }
+
 
 closeBtn.onclick = closeModal;
 modal.onclick = e => e.target === modal && closeModal();
