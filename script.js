@@ -9,8 +9,9 @@ const modalImg = document.getElementById("modal-img");
 const modalCaption = document.getElementById("modal-caption");
 const closeBtn = document.getElementById("close");
 
+document.addEventListener("DOMContentLoaded", () => {
 function unlock() {
-  if (password.value === PASSWORD) {
+  if (passwordInput.value === PASSWORD) {
     lock.hidden = true;
     diary.hidden = false;
     loadPosts();
@@ -48,11 +49,14 @@ function openModal(post) {
   modalCaption.innerHTML = `<strong>${post.date}</strong><br>${post.caption}`;
 }
 
-
 closeBtn.onclick = closeModal;
-modal.onclick = e => e.target === modal && closeModal();
+
+modal.onclick = (e) => {
+  if (e.target === modal) closeModal();
+};
 
 function closeModal() {
   modal.style.display = "none";
 }
-}
+ 
+}  });
