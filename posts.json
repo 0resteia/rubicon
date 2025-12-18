@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "image": "images/post1.jpg",
+      "caption": "First memory.",
+      "date": "2025-12-01"
+    }
+  ]
+}
