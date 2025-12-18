@@ -1,4 +1,13 @@
-const PASSWORD = "digital"; // CHANGE THIS
+const PASSWORD = "digital"; 
+// Explicitly reference elements
+const passwordInput = document.getElementById("password");
+const lock = document.getElementById("lock");
+const diary = document.getElementById("diary");
+const grid = document.getElementById("grid");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+const modalCaption = document.getElementById("modal-caption");
+const closeBtn = document.getElementById("close");
 
 function unlock() {
   if (password.value === PASSWORD) {
