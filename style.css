@@ -1,15 +1,7 @@
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
-}
+* { box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+body { margin: 0; background: #fafafa; color: #262626; }
 
-body {
-  margin: 0;
-  background: #fafafa;
-  color: #262626;
-}
-
-/* Login */
+/* CENTERED PASSWORD SCREEN */
 .center {
   height: 100vh;
   display: flex;
@@ -17,20 +9,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+input, button { padding: 10px; margin-top: 10px; width: 220px; }
 
-input, button {
-  padding: 10px;
-  margin-top: 10px;
-  width: 220px;
-}
-
-/* Profile */
+/* PROFILE */
 .profile {
   display: flex;
   align-items: center;
   padding: 20px;
 }
-
 .profile-pic {
   width: 100px;
   height: 100px;
@@ -38,14 +24,15 @@ input, button {
   margin-right: 20px;
   object-fit: cover;
 }
+.bio { margin-top: 5px; }
 
-/* Grid */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
+  padding: 0 4px 20px 4px;
 }
-
 .post img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -53,7 +40,7 @@ input, button {
   cursor: pointer;
 }
 
-/* Modal */
+/* MODAL */
 .modal {
   position: fixed;
   inset: 0;
@@ -64,19 +51,8 @@ input, button {
   align-items: center;
   z-index: 100;
 }
-
-#modal-img {
-  max-width: 90%;
-  max-height: 75%;
-}
-
-#modal-caption {
-  color: white;
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-}
-
+#modal-img { max-width: 90%; max-height: 75%; }
+#modal-caption { color: white; margin-top: 15px; text-align: center; font-size: 14px; max-width: 90%; }
 #close {
   position: absolute;
   top: 20px;
