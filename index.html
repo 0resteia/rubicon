@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>My Private Diary</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- script -->
-    <script src="script.js"></script>
-    <i class="fa-solid fa-music"></i>
+
+<div id="lock" class="center">
+  <h2>🔒 Private Diary</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="unlock()">Enter</button>
+</div>
+
+<div id="diary" hidden>
+
+  <header class="profile">
+    <img src="images/profile.jpg" class="profile-pic">
+    <div>
+      <h1>@my_diary</h1>
+      <p class="bio">A quiet place for memories.</p>
+    </div>
+  </header>
+
+  <section id="grid" class="grid"></section>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal" hidden>
+  <span id="close">&times;</span>
+  <img id="modal-img">
+  <div id="modal-caption"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
