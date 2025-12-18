@@ -44,5 +44,6 @@ closeBtn.onclick = closeModal;
 modal.onclick = e => e.target === modal && closeModal();
 
 function closeModal() {
-  modal.hidden = true;
+  modal.style.display = "none";
+}
 }
