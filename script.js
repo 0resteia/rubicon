@@ -1,4 +1,4 @@
-const PASSWORD = "your-password"; // CHANGE THIS
+const PASSWORD = "digital"; // CHANGE THIS
 
 function unlock() {
   if (password.value === PASSWORD) {
