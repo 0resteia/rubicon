@@ -2,8 +2,13 @@
   "posts": [
     {
       "image": "images/post1.jpg",
-      "caption": "First memory.",
+      "caption": "A quiet afternoon walk.",
       "date": "2025-12-01"
+    },
+    {
+      "image": "images/post2.jpg",
+      "caption": "Coffee and sunlight.",
+      "date": "2025-12-03"
     }
   ]
 }
